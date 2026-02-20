@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Custom Pink and White Theme Variables */
+:root {
+  --color-primary-pink: #ec4899;
+  --color-primary-pink-dark: #db2777;
+  --color-primary-pink-light: #f9a8d4;
+  --color-secondary-pink: #fce7f3;
+  --color-accent-pink: #ff69b4;
+  --color-white: #ffffff;
+  --color-off-white: #fefefe;
+  --color-gray-light: #f3f4f6;
+  --color-gray-medium: #d1d5db;
+  --color-gray-dark: #6b7280;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background-color: var(--color-off-white);
+  color: var(--color-text-primary);
+}
+
+/* Custom Scrollbar - Pink Theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-pink);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-pink);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-pink-dark);
+}
+
+/* Focus Visible for Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-pink);
+  outline-offset: 2px;
+}
